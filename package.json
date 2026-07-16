@@ -1,0 +1,9 @@
+{
+  "name": "nexus-aria-ctf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DEF CON AI Village - Automotive LLM Security CTF (ARIA chatbot). Vulnerable by design for training: Prompt Injection, Insecure Output Handling, Sensitive Information Exfiltration.",
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
