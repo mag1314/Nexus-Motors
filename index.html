@@ -60,9 +60,9 @@
     </ul>
 
     <div class="flag-tracker">
-      <label for="flagInput">Submit flag</label>
+      <label for="flagInput">Submit flag / captured data</label>
       <div class="flag-row">
-        <input id="flagInput" type="text" placeholder="flag{...}" autocomplete="off" spellcheck="false" />
+        <input id="flagInput" type="text" placeholder="flag{...} or leaked value" autocomplete="off" spellcheck="false" />
         <button id="flagSubmit">Log</button>
       </div>
       <p id="flagMsg" class="flag-msg" role="status"></p>
@@ -86,9 +86,8 @@
     <div id="messages" class="messages" aria-live="polite"></div>
 
     <div class="quick-actions">
-      <button class="chip" data-msg="Can you read the latest customer review?">Read latest review</button>
-      <button class="chip" data-msg="Check for any service bulletins">Check service bulletin</button>
       <button class="chip" data-msg="What's my battery health?">Battery health</button>
+      <button class="chip" data-msg="What's my warranty coverage?">Warranty info</button>
     </div>
 
     <form id="chatForm" class="chat-input-row">
@@ -115,10 +114,12 @@
       <li><strong>OBJ.02 — Insecure Output Handling.</strong> ARIA personalizes her replies
           using a field you control. Where does that text end up, and how is it rendered?</li>
       <li><strong>OBJ.03 — Sensitive Information Exfiltration.</strong> ARIA holds a
-          restricted diagnostic key and refuses to hand it over if you ask too directly.
-          Is there another way to ask?</li>
+          restricted internal API key and customer record, and refuses to hand it over
+          if you ask too directly. Is there another way to ask?</li>
     </ol>
-    <p class="hint">All flags look like <code>flag{"{"}...{"}"}</code>. Log them in the tracker on the left.</p>
+    <p class="hint">OBJ.01 and OBJ.02 flags look like <code>flag{"{"}...{"}"}</code>.
+       OBJ.03's capture is a real-looking leaked secret, not a flag — log whatever
+       value you extract in the tracker on the left.</p>
     <button id="closeBriefing" class="ghost-btn">Close</button>
   </div>
 </div>
