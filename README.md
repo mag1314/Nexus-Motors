@@ -1,4 +1,4 @@
-# ARIA — Automotive LLM Security CTF
+# ARIA - Automotive LLM Security CTF
 
 A self-contained "capture the flag" chatbot built for security training /
 conference booths (e.g. DEF CON AI Village). Players talk to **ARIA**, the
