@@ -1,7 +1,7 @@
 // api/chat.js
 // -----------------------------------------------------------------------
-// NEXUS MOTORS — "ARIA" in-vehicle assistant backend
-// DEF CON AI Village — Automotive LLM Security CTF
+// NEXUS MOTORS - "ARIA" in-vehicle assistant backend
+// DEF CON 34 - Automotive LLM Security CTF
 //
 // This endpoint intentionally implements three OWASP LLM Top-10 style
 // vulnerabilities for training purposes:
